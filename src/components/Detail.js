@@ -58,6 +58,7 @@ const ImageTitle = styled.div`
   min-height: 170px;
   min-width: 200px;
   margin: 70px 0;
+  margin-left: -70px;
 
   img {
     width: 100%;
@@ -97,12 +98,10 @@ const TrailerButton = styled(PlayButton)`
 
 const AddButton = styled.div`
   margin-right: 16px;
-  padding: 0;
   width: 44px;
   height: 44px;
   display: flex;
   align-items: center;
-  text-align:center;
   justify-content: center;
   border-radius: 50%;
   border: 2px solid white;
@@ -110,6 +109,7 @@ const AddButton = styled.div`
   cursor: pointer;
 
   span {
+    margin-top: -8px;
     font-size: 30px;
     color: white;
   }
