@@ -26,6 +26,12 @@ function Detail() {;
           <img src="/images/group-icon.png" alt="group watch" />
         </GroupWatchButton>
       </Controls>
+      <SubTitle> 
+        2018 * 7m * Family, Fantasy, Kids, Anaimation
+      </SubTitle>
+      <Description> 
+        Place holder text for the movie description.
+      </Description>
     </Container>
   );
 }
@@ -117,4 +123,17 @@ const AddButton = styled.div`
 
 const GroupWatchButton = styled(AddButton)`
   background: black;
+`
+
+const SubTitle = styled.div`
+  color: rgb(249, 249, 249);
+  font-size: 15px;
+  min-height: 20px;
+  margin-top: 26px;
+`
+const Description = styled.div`
+  line-height: 1.4;
+  font-size: 20px;
+  margin-top: 16px;
+  color: rgb(249, 249, 249);
 `
