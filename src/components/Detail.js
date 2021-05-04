@@ -27,10 +27,10 @@ function Detail() {;
         </GroupWatchButton>
       </Controls>
       <SubTitle> 
-        2018 * 7m * Family, Fantasy, Kids, Anaimation
+        2018 - 7m - Family, Fantasy, Kids, Animation
       </SubTitle>
       <Description> 
-        Place holder text for the movie description.
+        A Chinese mom who's sad when her grown son leaves home gets another chance at motherhood when one of her dumplings springs to life. But she finds that nothing stays cute and small forever.
       </Description>
     </Container>
   );
@@ -63,8 +63,9 @@ const ImageTitle = styled.div`
   width: 35vw;
   min-height: 170px;
   min-width: 200px;
-  margin: 70px 0;
+  margin: 70px 0 20px;
   margin-left: -70px;
+  margin-top: 60px;
 
   img {
     width: 100%;
@@ -118,11 +119,19 @@ const AddButton = styled.div`
     margin-top: -8px;
     font-size: 30px;
     color: white;
+
+  }
+
+  &:hover{
+    background-color: rgba(0, 0, 0, 0.9);
   }
 `
 
 const GroupWatchButton = styled(AddButton)`
   background: black;
+  &:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 `
 
 const SubTitle = styled.div`
@@ -136,4 +145,5 @@ const Description = styled.div`
   font-size: 20px;
   margin-top: 16px;
   color: rgb(249, 249, 249);
+  max-width: 760px;
 `
