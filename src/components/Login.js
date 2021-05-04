@@ -7,8 +7,9 @@ function Login() {
       <CTA>
         <CTALogoOne src="/images/cta-logo-one.svg" />
         <SignUp>GET THE DISNEY BUNDLE</SignUp>
-        <Description>Description of the service here.</Description>
+        <Description>Stream now. <Terms href="#">Terms apply</Terms></Description>
         <CTALogoTwo src="/images/cta-logo-two.png" />
+        <Subscription><Subscribe href="#">Sign up for Disney+ only.</Subscribe><Rate>$7.99/month or $79.99/year</Rate></Subscription>
       </CTA>
     </Container>
   );
@@ -79,8 +80,29 @@ const Description = styled.p`
   letter-spacing: 1.5px;
   text-align: center;
   line-height: 1.5;
+  color: #aaa;
 `
 
 const CTALogoTwo = styled.img` 
   width: 90%;
+`
+
+const Terms = styled.a`
+  color: white;
+`
+
+const Subscription = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+`
+
+const Subscribe = styled.a`
+  margin-bottom: 2px;
+  color: white;
+`
+
+const Rate = styled.div`
+  color: #aaa;
 `
